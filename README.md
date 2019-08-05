@@ -27,7 +27,7 @@
             │       ├── part_1
             │       └── part_2
             |
-            └── train_converter.py
+            ├── train_converter.py
             └── test_converter.py
   ```  
 
