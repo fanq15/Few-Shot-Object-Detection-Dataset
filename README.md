@@ -12,7 +12,7 @@
 
   Download the images and annotations from [FSOD](https://drive.google.com/drive/folders/1XXADD7GvW8M_xzgFpHfudYDYtKtDgZGM?usp=sharing).
 
-  Make a `YOUR_PATH/data/all_images` folder and put the files as the following structure:
+  Make a `YOUR_PATH/fsod/all_images` folder and put the files as the following structure:
   ```
   YOUR_PATH
       ├── code
@@ -20,12 +20,12 @@
       │     ├── testing scripts
       │     ├── ...
       │ 
-      └── data
+      └── fsod
             ├── all_images
-            |       ├── fsod_train_df_v3.pkl
-            │       ├── fsod_test_df_v3.pkl
-            │       ├── imagenet
-            │       └── openimage
+            |       ├── fsod_train_df.pkl
+            │       ├── fsod_test_df.pkl
+            │       ├── part_1
+            │       └── part_2
             |
             └── train_converter.py
             └── test_converter.py
@@ -36,19 +36,19 @@
   You need to use the `train_converter.py` and `test_converter.py` convert the `pkl` annotatinos files to `json` (Pascal VOC format) by running the following script. 
   
   
-  Generate `train.json` in the `data` folder:
+  Generate `train.json` in the `fsod` folder:
   ```
   python3 train_converter.py --data_path YOUR_PATH
   ```
   
   
-  Generate `test.json` and `val.txt` in the `data` folder:
+  Generate `test.json` and `val.txt` in the `fsod` folder:
   ```
   python3 test_converter.py --data_path YOUR_PATH
   ```
 
     
-  You need to put the `data` folder in the `YOUR_PATH` folder and run your training or testing script in the `YOUR_PATH/code` foler. (It will change the `file_name` in the json to `YOUR_PATH/data/all_images/IMAGE_NAME`, and it is actually the path where the code imports the training/testing image.)
+  You need to put the `fsod` folder in the `YOUR_PATH` folder and run your training or testing script in the `YOUR_PATH/code` foler. (It will change the `file_name` in the json to `YOUR_PATH/fsod/all_images/IMAGE_NAME`, and it is actually the path where the code imports the training/testing image.)
   
 - **Dataset Summary**:
 
