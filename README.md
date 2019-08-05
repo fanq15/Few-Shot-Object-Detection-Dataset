@@ -1,4 +1,12 @@
 # Few-Shot-Object-Detection-Dataset
+- **Introduction**:
+
+  The dataset we use here is a high-diverse Few-Shot Object Detection Dataset (FSOD) which is specifically designed for few-shot object detection and intrinsically designed to evaluate thegenerality of a model on novel categories. 
+  
+  To build this dataset, we first summarize a label system from ImageNet and OpenImage. By merging the leaf labels in their original label trees, group those of same semantics, such as the ice bear and polar bear, to one category, and remove some semantics that does not belong to any leaf categories. Then, we remove the images with bad labeling quality and those with boxes of improper size. We remove boxes smaller than 0.05% of image size which is usually in bad visual quality and unsuitable to serve as support examples. 
+
+  We follow the few-shot learning principle to split our data into the training set and test set whose categories has no overlap. We construct the training set with categories in MS COCO Dataset and ImageNet Dataset in case researchers need a pretraining stage. We then split the test set which contains 200 categories by choosing those with the largest distance with existing training categories, where the distance calculates the shortest path that connects the senses of two phrase in the is-a taxonomy. The remaining categories are merged into the training set that in total contains 800 categories. In all, we construct a dataset of 1000 categories with very clear category split for training and testing, where 531 categories come from ImageNet Dataset and 469 from Open Image Dataset.
+
 
 - **Download FSOD**:
 
@@ -57,3 +65,7 @@
     |Box Size | [6, 6828] | [13, 4605] |
     |Box Area Ratio | [0.0009, 1] | [0.0009, 1] |
     |Box W/H Ratio | [0.0216, 89] | [0.0199, 51.5] |
+    
+- **Contact**:
+
+  This dataset is maintained by Qi Fan (Tencent Youtu Lab, fanq15@gmail.com), Wei Zhuo (Tencent Youtu Lab, wei.zhuowx@gmail.com) and Yu-Wing Tai (Tencent Youtu Lab, yuwingtai@tencent.com) 
