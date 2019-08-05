@@ -1,7 +1,7 @@
 # Few-Shot-Object-Detection-Dataset
 - **Introduction**:
 
-  The dataset we use here is a high-diverse Few-Shot Object Detection Dataset (FSOD) which is specifically designed for few-shot object detection and intrinsically designed to evaluate thegenerality of a model on novel categories. 
+  Few-Shot Object Detection Dataset (FSOD) is a high-diverse dataset specifically designed for few-shot object detection and intrinsically designed to evaluate thegenerality of a model on novel categories. 
   
   To build this dataset, we first summarize a label system from ImageNet and OpenImage. By merging the leaf labels in their original label trees, group those of same semantics, such as the ice bear and polar bear, to one category, and remove some semantics that does not belong to any leaf categories. Then, we remove the images with bad labeling quality and those with boxes of improper size. We remove boxes smaller than 0.05% of image size which is usually in bad visual quality and unsuitable to serve as support examples. 
 
