@@ -10,8 +10,7 @@ parser.add_argument("--data_path", help="", type=str)
 args = parser.parse_args()
 data_path = args.data_path
 
-train_df = pd.read_pickle('./fsod_train_df_v3.pkl')
-
+train_df = pd.read_pickle('./fsod_train_df.pkl')
 train_dict = train_df.to_dict('index')
 print(len(train_dict))
 
@@ -41,7 +40,7 @@ for key, value in train_dict.items():
     images_name_ls.append(value['image_name'])
     images_dict = {}
     images_dict['id'] = int('2019' + '%09d' % (key))
-    images_dict['file_name'] = value['image_path'].replace('./all_images', os.path.join(data_path, 'data/all_images'))
+    images_dict['file_name'] = value['image_path'].replace('./all_images', os.path.join(data_path, 'fsod/all_images'))
     
     images_dict['width'] = int(value['width'])
     images_dict['height'] = int(value['height'])

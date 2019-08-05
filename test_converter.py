@@ -10,7 +10,7 @@ parser.add_argument("--data_path", help="", type=str)
 args = parser.parse_args()
 data_path = args.data_path
 
-test_df = pd.read_pickle('./fsod_test_df_v3.pkl')
+test_df = pd.read_pickle('./fsod_test_df.pkl')
 test_dict = test_df.to_dict('index')
 
 # images
@@ -40,7 +40,7 @@ for key, value in test_dict.items():
     images_name_ls.append(value['image_name'].split('.')[0])
     images_dict = {}
     images_dict['id'] = int('2019' + '%09d' % (key))
-    images_dict['file_name'] = value['image_path'].replace('./all_images', os.path.join(data_path, 'data/all_images'))
+    images_dict['file_name'] = value['image_path'].replace('./all_images', os.path.join(data_path, 'fsod/all_images'))
     
     images_dict['width'] = int(value['width'])
     images_dict['height'] = int(value['height'])
