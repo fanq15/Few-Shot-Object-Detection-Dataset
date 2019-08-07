@@ -72,7 +72,7 @@
 
 ## Citation
 
-  If you use this dataset in your research, please cite this paper.
+  If you use this dataset in your research, please cite this [paper](https://arxiv.org/pdf/1908.01998v1.pdf).
 
   ```
   @article{fan2019fsod,
