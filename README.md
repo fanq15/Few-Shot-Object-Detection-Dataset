@@ -68,7 +68,7 @@
     
 - **Contact**:
 
-  This dataset is maintained by Qi Fan (Tencent, fanq15@gmail.com), Wei Zhuo (Tencent, wei.zhuowx@gmail.com) and Yu-Wing Tai (Tencent, yuwingtai@tencent.com) 
+  This dataset is maintained by Qi Fan (Tencent, fanqithu@gmail.com), Wei Zhuo (Tencent, wei.zhuowx@gmail.com) and Yu-Wing Tai (Tencent, yuwingtai@tencent.com) 
 
 ## Citation
 
