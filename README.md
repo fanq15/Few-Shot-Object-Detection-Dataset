@@ -69,3 +69,16 @@
 - **Contact**:
 
   This dataset is maintained by Qi Fan (Tencent Youtu Lab, fanq15@gmail.com), Wei Zhuo (Tencent Youtu Lab, wei.zhuowx@gmail.com) and Yu-Wing Tai (Tencent Youtu Lab, yuwingtai@tencent.com) 
+
+## Citation
+
+  If you use this dataset in your research, please cite this project.
+
+  ```
+  @article{fan2019fsod,
+    title={Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector},
+    author={Fan, Qi and Wei, Zhuo and Tai, Yu-Wing},
+    journal={arXiv preprint arXiv:1908.01998},
+    year={2019}
+  }
+  ```
