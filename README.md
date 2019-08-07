@@ -77,7 +77,7 @@
   ```
   @article{fan2019fsod,
     title={Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector},
-    author={Fan, Qi and Wei, Zhuo and Tai, Yu-Wing},
+    author={Fan, Qi and Zhuo, Wei and Tai, Yu-Wing},
     journal={arXiv preprint arXiv:1908.01998},
     year={2019}
   }
