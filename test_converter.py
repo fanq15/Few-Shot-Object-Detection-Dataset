@@ -30,6 +30,11 @@ for cnt, item in enumerate(categories_raw_ls):
     categories_dict['name'] = item
     categories_ls.append(categories_dict)
 
+try:
+    os.remove('./val.txt')
+except:
+    pass
+
 images_name_dict = {}
 for key, value in test_dict.items():
     img_path = value['image_path']
@@ -46,10 +51,7 @@ for key, value in test_dict.items():
     images_dict['height'] = int(value['height'])
     images_ls.append(images_dict)
     images_name_dict[value['image_name'].split('.')[0]] = int('2019' + '%09d' % (key))
-    try:
-        os.remove('./val.txt')
-    except:
-        pass
+
     with open('./val.txt', 'a') as f:
         f.write(str(images_dict['id']))
         f.write('\n')
