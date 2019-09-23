@@ -10,7 +10,7 @@ parser.add_argument("--data_path", help="", type=str)
 args = parser.parse_args()
 data_path = args.data_path
 
-train_df = pd.read_pickle('./fsod_train_df.pkl')
+train_df = pd.read_pickle('./all_images/fsod_train_df.pkl')
 train_dict = train_df.to_dict('index')
 print(len(train_dict))
 
