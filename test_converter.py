@@ -10,7 +10,7 @@ parser.add_argument("--data_path", help="", type=str)
 args = parser.parse_args()
 data_path = args.data_path
 
-test_df = pd.read_pickle('./fsod_test_df.pkl')
+test_df = pd.read_pickle('./all_images/fsod_test_df.pkl')
 test_dict = test_df.to_dict('index')
 
 # images
