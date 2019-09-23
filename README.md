@@ -35,7 +35,7 @@
 
 - **Dataset Convert**:
 
-  You need to use the `train_converter.py` and `test_converter.py` convert the `pkl` annotatinos files to `json` (Pascal VOC format) by running the following script. 
+  You need to use the `train_converter.py` and `test_converter.py` convert the `pkl` annotatinos files to `json` by running the following script. The bounding box format is `(x_min, y_min, w, h)`.
   
   
   Generate `train.json` in the `fsod` folder:
