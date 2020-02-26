@@ -77,10 +77,10 @@
   If you use this dataset in your research, please cite this [paper](https://arxiv.org/pdf/1908.01998v1.pdf).
 
   ```
-  @article{fan2019fsod,
+  @inproceedings{fan2020fsod,
     title={Few-Shot Object Detection with Attention-RPN and Multi-Relation Detector},
-    author={Fan, Qi and Zhuo, Wei and Tai, Yu-Wing},
-    journal={arXiv preprint arXiv:1908.01998},
-    year={2019}
+    author={Fan, Qi and Zhuo, Wei and Tang, Chi-Keung and Tai, Yu-Wing},
+    booktitle={CVPR},
+    year={2020}
   }
   ```
