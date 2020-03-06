@@ -1,4 +1,7 @@
 # Few-Shot-Object-Detection-Dataset
+
+Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April.
+
 - **Introduction**:
 
   Few-Shot Object Detection Dataset (FSOD) is a high-diverse dataset specifically designed for few-shot object detection and intrinsically designed to evaluate thegenerality of a model on novel categories. 
