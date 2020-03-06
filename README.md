@@ -1,8 +1,10 @@
 # Few-Shot-Object-Detection-Dataset
 
-Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April.
+## Updates:
+- The dataset is rearranged to MS COCO format for ease of use and the Baidu Driver download link is provided! (The new dataset format is under debug.) (7/3/2020)
+- Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April. (7/3/2020)
 
-- **Introduction**:
+## Introduction:
 
   Few-Shot Object Detection Dataset (FSOD) is a high-diverse dataset specifically designed for few-shot object detection and intrinsically designed to evaluate thegenerality of a model on novel categories. 
   
@@ -13,11 +15,11 @@ Now I have time to process the data and code. The data will be rearranged to VOC
   We follow the few-shot learning principle to split our data into the training set and test set whose categories has no overlap. We construct the training set with categories in MS COCO Dataset and ImageNet Dataset in case researchers need a pretraining stage. We then split the test set which contains 200 categories by choosing those with the largest distance with existing training categories, where the distance calculates the shortest path that connects the senses of two phrase in the is-a taxonomy. The remaining categories are merged into the training set that in total contains 800 categories. In all, we construct a dataset of 1000 categories with very clear category split for training and testing, where 531 categories come from ImageNet Dataset and 469 from Open Image Dataset.
 
 
-- **Download FSOD**:
+## Download FSOD:
 
   Download the images and annotations from [Google Driver](https://drive.google.com/drive/folders/1XXADD7GvW8M_xzgFpHfudYDYtKtDgZGM?usp=sharing) or [Baidu Driver](https://pan.baidu.com/s/1sfJWw-OnjAjRZTj797gl9A) (the passcode for Baidu Driver is: `wnj8`).
 
-- **FSOD Dataset Format and Usage**:
+## FSOD Dataset Format and Usage:
 
   The FSOD dataset is in MS COCO format (under debug), so place the FSOD dataset as the COCO dataset. And you can use the FSOD dataset like COCO dataset.
   
@@ -45,7 +47,7 @@ Now I have time to process the data and code. The data will be rearranged to VOC
                   │ 
                   └── other datasets
   ```  
-- **Dataset Summary**:
+## Dataset Summary:
 
 
     |  | Train | Test |
@@ -61,7 +63,7 @@ Now I have time to process the data and code. The data will be rearranged to VOC
     |Box Area Ratio | [0.0009, 1] | [0.0009, 1] |
     |Box W/H Ratio | [0.0216, 89] | [0.0199, 51.5] |
     
-- **Contact**:
+## Contact:
 
   This dataset is maintained by Qi Fan (Tencent, fanqithu@gmail.com), Wei Zhuo (Tencent, wei.zhuowx@gmail.com) and Yu-Wing Tai (Tencent, yuwingtai@tencent.com) 
 
