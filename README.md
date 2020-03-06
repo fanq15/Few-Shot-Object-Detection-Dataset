@@ -50,18 +50,18 @@
 ## Dataset Summary:
 
 
-    |  | Train | Test |
-    | ---------- | :-----------:  | :-----------: |
-    |No. Class | 800 | 200 |
-    |No. Image | 52350 | 14152 |
-    |No. Box | 147489 | 35102 |
-    |Avg No. Box / Img  | 2.82 | 2.48 |
-    |Min No. Img / Cls  | 22 | 30 |
-    |Max No. Img / Cls  | 208 | 199 |
-    |Avg No. Img / Cls  | 75.65 | 74.31 |
-    |Box Size | [6, 6828] | [13, 4605] |
-    |Box Area Ratio | [0.0009, 1] | [0.0009, 1] |
-    |Box W/H Ratio | [0.0216, 89] | [0.0199, 51.5] |
+|  | Train | Test |
+| ---------- | :-----------:  | :-----------: |
+|No. Class | 800 | 200 |
+|No. Image | 52350 | 14152 |
+|No. Box | 147489 | 35102 |
+|Avg No. Box / Img  | 2.82 | 2.48 |
+|Min No. Img / Cls  | 22 | 30 |
+|Max No. Img / Cls  | 208 | 199 |
+|Avg No. Img / Cls  | 75.65 | 74.31 |
+|Box Size | [6, 6828] | [13, 4605] |
+|Box Area Ratio | [0.0009, 1] | [0.0009, 1] |
+|Box W/H Ratio | [0.0216, 89] | [0.0199, 51.5] |
     
 ## Contact:
 
