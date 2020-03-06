@@ -17,44 +17,34 @@ Now I have time to process the data and code. The data will be rearranged to VOC
 
   Download the images and annotations from [Google Driver](https://drive.google.com/drive/folders/1XXADD7GvW8M_xzgFpHfudYDYtKtDgZGM?usp=sharing) or [Baidu Driver](https://pan.baidu.com/s/1sfJWw-OnjAjRZTj797gl9A) (the passcode for Baidu Driver is: `wnj8`).
 
-  Make a `YOUR_PATH/fsod/all_images` folder and put the files as the following structure:
+- **FSOD Dataset Format and Usage**:
+
+  The FSOD dataset is in MS COCO format (under debug), so place the FSOD dataset as the COCO dataset. And you can use the FSOD dataset like COCO dataset.
+  
+  Put the FSOD dataset as the following structure:
   ```
   YOUR_PATH
-      ├── code
-      │     ├── training scripts
-      │     ├── testing scripts
-      │     ├── ...
-      │ 
-      └── fsod
-            ├── all_images
-            |       ├── fsod_train_df.pkl
-            │       ├── fsod_test_df.pkl
-            │       ├── part_1
-            │       └── part_2
-            |
-            ├── train_converter.py
-            └── test_converter.py
+      └── your code dir
+            ├── your code
+            ├── ...
+            │ 
+            └── datasets
+                  ├──── fsod
+                  |       ├── annotations
+                  │       │       ├── fsod_train.json
+                  │       │       └── fsod_test.json
+                  │       └── images
+                  │             ├── part_1
+                  │             └── part_2
+                  │ 
+                  ├──── coco
+                  |       ├── annotations
+                  │       │       ├── instances_train2017.json
+                  │       │       └── instances_val2017.json
+                  │       └── images
+                  │ 
+                  └── other datasets
   ```  
-
-- **Dataset Convert**:
-
-  You need to use the `train_converter.py` and `test_converter.py` convert the `pkl` annotatinos files to `json` by running the following script. The bounding box format is `(x_min, y_min, w, h)`.
-  
-  
-  Generate `train.json` in the `fsod` folder:
-  ```
-  python3 train_converter.py --data_path YOUR_PATH
-  ```
-  
-  
-  Generate `test.json` and `val.txt` in the `fsod` folder:
-  ```
-  python3 test_converter.py --data_path YOUR_PATH
-  ```
-
-    
-  You need to put the `fsod` folder in the `YOUR_PATH` folder and run your training or testing script in the `YOUR_PATH/code` foler. (It will change the `file_name` in the json to `YOUR_PATH/fsod/all_images/IMAGE_NAME`, and it is actually the path where the code imports the training/testing image.)
-  
 - **Dataset Summary**:
 
 
