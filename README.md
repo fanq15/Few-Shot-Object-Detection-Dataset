@@ -15,7 +15,7 @@ Now I have time to process the data and code. The data will be rearranged to VOC
 
 - **Download FSOD**:
 
-  Download the images and annotations from [FSOD](https://drive.google.com/drive/folders/1XXADD7GvW8M_xzgFpHfudYDYtKtDgZGM?usp=sharing).
+  Download the images and annotations from [Google Driver](https://drive.google.com/drive/folders/1XXADD7GvW8M_xzgFpHfudYDYtKtDgZGM?usp=sharing) or [Baidu Driver](https://pan.baidu.com/s/1sfJWw-OnjAjRZTj797gl9A) (the passcode for Baidu Driver is: `wnj8`).
 
   Make a `YOUR_PATH/fsod/all_images` folder and put the files as the following structure:
   ```
