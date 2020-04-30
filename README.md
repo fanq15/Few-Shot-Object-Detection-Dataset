@@ -1,6 +1,7 @@
 # Few-Shot-Object-Detection-Dataset
 
 ## Updates:
+- The original code is based on an unofficial mask rcnn framework. It is too slow, and I am trying to transfer the code to the newest `detectron2` framework. The code is still under debugging... If you want to use the original code, you can contact me. (30/4/2020)
 - The dataset is rearranged to MS COCO format for ease of use and the Baidu Driver download link is provided! (7/3/2020)
 - Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April. (7/3/2020)
 
