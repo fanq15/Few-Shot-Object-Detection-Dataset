@@ -1,12 +1,15 @@
 # Few-Shot-Object-Detection-Dataset
 
+## NEWS!
+`detectron2` based FSOD is released in a data-limited toolbox [FewX](https://github.com/fanq15/FewX)! It can reach **12.0 AP** on MS COCO (full-way 10-shot on voc subset)!
+
 ## Updates:
-- `detectron2` based FSOD is released in a data-limited toolbox [FewX](https://github.com/fanq15/FewX)! It can reach **12.0 AP** on MS COCO (voc subset)! (9/8/2020)
-- The original code is released in [fanq15/FSOD-code](https://github.com/fanq15/FSOD-code)! (13/5/2020)
-- Please forget the `detectron2` based code. I will directly release the original code recently. Very sorry for the late code release. All kinds of pressures are driving me crazy! (10/5/2020)
-- The original code is based on an unofficial mask rcnn framework. It is too slow, and I am trying to transfer the code to the newest `detectron2` framework. The code is still under debugging... I only plan to release the detectron2 based code. (30/4/2020)
-- The dataset is rearranged to MS COCO format for ease of use and the Baidu Driver download link is provided! (7/3/2020)
-- Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April. (7/3/2020)
+- `detectron2` based FSOD is released in a data-limited toolbox [FewX](https://github.com/fanq15/FewX)! It can reach **12.0 AP** on MS COCO (full-way 10-shot on voc subset)! (09/08/2020)
+- The original code is released in [fanq15/FSOD-code](https://github.com/fanq15/FSOD-code)! (13/05/2020)
+- Please forget the `detectron2` based code. I will directly release the original code recently. Very sorry for the late code release. All kinds of pressures are driving me crazy! (10/05/2020)
+- The original code is based on an unofficial mask rcnn framework. It is too slow, and I am trying to transfer the code to the newest `detectron2` framework. The code is still under debugging... I only plan to release the detectron2 based code. (30/04/2020)
+- The dataset is rearranged to MS COCO format for ease of use and the Baidu Driver download link is provided! (07/03/2020)
+- Now I have time to process the data and code. The data will be rearranged to VOC or COCO format for the ease of use. And the Baidu Driver download link will be provided. The code will be transfered to the detectron2 framework. The data part will be done in two weeks. The code part is expected to be done before this April. (07/03/2020)
 
 ## Introduction:
 
