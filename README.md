@@ -1,6 +1,7 @@
 # Few-Shot-Object-Detection-Dataset
 
 ## Updates:
+- `detectron2` based FSOD is released in a data-limited toolbox [FewX](https://github.com/fanq15/FewX)! It can reach **12.0 AP** on MS COCO (voc subset)! (9/8/2020)
 - The original code is released in [fanq15/FSOD-code](https://github.com/fanq15/FSOD-code)! (13/5/2020)
 - Please forget the `detectron2` based code. I will directly release the original code recently. Very sorry for the late code release. All kinds of pressures are driving me crazy! (10/5/2020)
 - The original code is based on an unofficial mask rcnn framework. It is too slow, and I am trying to transfer the code to the newest `detectron2` framework. The code is still under debugging... I only plan to release the detectron2 based code. (30/4/2020)
