@@ -1,7 +1,7 @@
 # Few-Shot-Object-Detection-Dataset
 
 ## NEWS!
-**`detectron2` based FSOD is released in a data-limited task toolbox [FewX](https://github.com/fanq15/FewX)! It can reach 12.0 AP on MS COCO (full-way 10-shot on voc subset).**
+**Detectron2 based FSOD is released in a data-limited task toolbox [FewX](https://github.com/fanq15/FewX)! It can reach 12.0 AP on MS COCO (full-way 10-shot on voc subset).**
 
 ## Updates:
 - `detectron2` based FSOD is released in a data-limited toolbox [FewX](https://github.com/fanq15/FewX)! It can reach **12.0 AP** on MS COCO (full-way 10-shot on voc subset)! (09/08/2020)
